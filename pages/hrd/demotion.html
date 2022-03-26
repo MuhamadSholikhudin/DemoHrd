@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HRD  | Blank Page</title>
+  <title>HRD  | Demosi Page</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -200,7 +200,7 @@
                   </a>
                   <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="./employees.html" class="nav-link active">
+                      <a href="./employees.html" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Karyawan</p>
                       </a>
@@ -218,7 +218,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="./promotion.html" class="nav-link">
+                      <a href="./promotion.html" class="nav-link ">
                         <i class="far fa-circle nav-icon"></i>
                         <p>PROMOSI</p>
                       </a>
@@ -230,7 +230,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="./mutation.html" class="nav-link">
+                      <a href="./mutation.html" class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>MUTASI</p>
                       </a>
@@ -258,12 +258,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>BPJS</h1>
+            <h1>Demosi Page</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+              <li class="breadcrumb-item active">Demosi Page</li>
             </ol>
           </div>
         </div>
@@ -273,26 +273,26 @@
     <section class="content mb-4">
         <div class="row">
           <div class="col-md-12">
-            Kelola BPJS =>  
+            Kelola Demosi =>  
             &nbsp;
               <!-- <a  class="btn btn-outline-primary btn-xs" data-toggle="tooltip" data-placement="bottom" title="Tambah 1 Karyawan  ">
                 <i class="fa fa-plus"></i>
               </a> -->
               
               <!-- Button trigger modal -->
-              <a href="bpjs_show_by_id.html" class="btn btn-outline-primary btn-xs" >
-                  <i class="fa fa-plus" data-toggle="tooltip" data-placement="bottom" title="Tambah 1 Karyawan"></i>
+              <a href="demotion_show_by_id.html" class="btn btn-outline-primary btn-xs" >
+                  <i class="fa fa-plus" data-toggle="tooltip" data-placement="bottom" title="Tambah 1 Demosi"></i>
               </a>
                 &nbsp;
               <a  class="btn btn-outline-primary btn-xs" data-toggle="modal"  data-target="#excel_karyawan_baru" >
-                <i class="fa fa-arrow-up"  data-toggle="tooltip" data-placement="bottom" title="Upload Excel Tambah Data Karyawan Baru "></i>
+                <i class="fa fa-arrow-up"  data-toggle="tooltip" data-placement="bottom" title="Upload Excel Tambah Data Demosi"></i>
               </a>
                 <!-- Modal -->
                 <div class="modal fade" id="excel_karyawan_baru" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Upload excel data BPJS karyawan baru</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Upload excel data Demosi</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -318,14 +318,14 @@
               &nbsp;
               <a  class="btn btn-outline-primary btn-xs" data-toggle="modal"  data-target="#excel_karyawan_update" >
                 <!-- <i class="fa fa-file-arrow-up"></i> -->
-                <i class="fas fa-upload" data-toggle="tooltip" data-placement="bottom" title="Upload Excel Update Data Karyawan"></i>
+                <i class="fas fa-upload" data-toggle="tooltip" data-placement="bottom" title="Upload Excel Update Demosi"></i>
               </a>
                <!-- Modal -->
                <div class="modal fade" id="excel_karyawan_update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Upload excel Update data BPJS karyawan</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Upload excel Update data Demosi</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -348,28 +348,24 @@
                     </div>
                   </div>
                 </div>
-  
-  
               &nbsp;
-              <a  class="btn btn-outline-primary btn-xs" data-toggle="tooltip" data-placement="bottom" title="Download Excel Data Karyawan">
+              <a  class="btn btn-outline-primary btn-xs" data-toggle="tooltip" data-placement="bottom" title="Download Excel Data Demosi Karyawan">
                 <!-- <i class="fa fa-file-arrow-up"></i> -->
                 <i class="fas fa-download"></i>
               </a>
               <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
                   Tooltip on bottom
                 </button> -->
-  
           </div>
         </div>
-  
+
       </section>
-  
 
     <!-- Main content -->
     <section class="content">
 
       <!-- Isi Content -->
-      
+               
       <div class="row">
           <div class="col-12">
             <div class="card">
@@ -393,136 +389,49 @@
                 <table class="table table-head-fixed text-nowrap">
                   <thead>
                     <tr>
-                      <th>NIK ID</th>
+                      <th>ID</th>
+                      <th>NIK</th>
                       <th>Nama</th>
-                      <th>Nomer BPJS kesehatan</th>
-                      <th>Tangal BPJS kesehatan</th>
-                      <th>Nomer BPJS kesehatan</th>
-                      <th>Tangal BPJS kesehatan</th>
-                      <th>Status karyawan</th>
+                      <th>Bagian Lama</th>
+                      <th>Bagian Saat ini</th>
                       <th>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>183</td>
-                      <td>John Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-success">Aktif</span></td>
+                      <td>1</td>
+                      <td>202203051234</td>
+                      <td>Muhamad Elanga</td>
+                      <td>Staff / Cutting</td>
+                      <td>Senior Staff / Cutting</td>
                       <td>
-                        
-                          <a href="bpjs_show_by_id.html" class="btn  btn-outline-danger btn-sm">Lihat</a>
-                          <a  class="btn  btn-outline-warning btn-sm">edit</a>
-                          <!-- <div class="margin">                          
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-danger">Action</button>
-                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-hover dropdown-icon" data-toggle="dropdown" aria-expanded="false">
-                                  <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu" role="menu" style="">
-                                  <a class="dropdown-item" href="#">Lihat</a>
-                                  <a class="dropdown-item" href="#">edit</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                              </div>                             
-                            </div> -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>219</td>
-                      <td>Alexander Pierce</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-warning">Aktif</span></td>
-                      <td>
-                          <a href="employee_show_by_id.html" class="btn  btn-outline-danger btn-sm">Lihat</a>
-                          <a href="bpjs_edit_by_id.html" class="btn  btn-outline-warning btn-sm">edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>657</td>
-                      <td>Bob Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-primary">Tidak aktif</span></td>
-                      <td>
-                          <a class="btn btn-outline-danger btn-sm">Lihat</a>
+                          <a href="demotion_show_by_id.html" class="btn  btn-outline-danger btn-sm">Lihat</a>
                           <a  class="btn  btn-outline-warning btn-sm">edit</a>
                       </td>
                     </tr>
                     <tr>
-                      <td>175</td>
-                      <td>Mike Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-danger">Aktif</span></td>
-                      <td>
-                          <a class="btn  btn-outline-danger btn-sm">Lihat</a>
-                          <a  class="btn  btn-outline-warning btn-sm">edit</a>
+                      <td>2</td>
+                      <td>202203054335</td>
+                      <td>John Terry</td>
+                      <td>Operator / Cutting</td>
+                      <td>Leader / Cutting</td>
+                                            <td>
+                          <a href="mutasi_show_by_id.html" class="btn  btn-outline-danger btn-sm">Lihat</a>
+                          <a href="mutasi_edit_by_id.html" class="btn  btn-outline-warning btn-sm">edit</a>
                       </td>
                     </tr>
                     <tr>
-                      <td>134</td>
-                      <td>Jim Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-success">Tidak aktif</span></td>
-                      <td>     <a class="btn  btn-outline-danger btn-sm">Lihat</a>
-                        <a  class="btn  btn-outline-warning btn-sm">edit</a></td>
-                    </tr>
-                    <tr>
-                      <td>494</td>
-                      <td>Victoria Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-warning">Aktif</span></td>
-                      <td>
-                          <a class="btn  btn-outline-danger btn-sm">Lihat</a>
-                          <a  class="btn  btn-outline-warning btn-sm">edit</a>
+                      <td>3</td>
+                      <td>202203054331</td>
+                      <td>Lampard</td>
+                      <td> </td>
+                      <td>Leader / Cutting</td>
+                                            <td>
+                          <a href="mutasi_show_by_id.html" class="btn  btn-outline-danger btn-sm">Lihat</a>
+                          <a href="mutasi_edit_by_id.html" class="btn  btn-outline-warning btn-sm">edit</a>
                       </td>
                     </tr>
-                    <tr>
-                      <td>832</td>
-                      <td>Michael Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-primary">Aktif</span></td>
-                      <td>
-                          <a class="btn  btn-outline-danger btn-sm">Lihat</a>
-                          <a  class="btn  btn-outline-warning btn-sm">edit</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>982</td>
-                      <td>Rocky Doe</td>
-                      <td>1234232</td>
-                      <td>11-7-2014</td>
-                      <td>2345134</td>
-                      <td>11-7-2014</td>
-                      <td><span class="tag tag-danger">Aktif</span></td>
-                      <td>
-                          <a class="btn  btn-outline-danger btn-sm">Lihat</a>
-                          <a  class="btn  btn-outline-warning btn-sm">edit</a>
-                      </td>
-                    </tr>
-                  </tbody>                   
+                 </tbody>                   
                 </table>
               </div>
               <!-- /.card-body -->
@@ -541,7 +450,6 @@
         </div>
 
       <!-- /.card -->
-
 
 
       <!-- /.card -->
