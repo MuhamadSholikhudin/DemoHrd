@@ -355,73 +355,231 @@
                   
                 </div>
                 
+
+                <!-- NAV PILLS -->
                 <div class="col-md-9">
                   <div class="card">
                     <div class="card-header p-2">
                       <ul class="nav nav-pills">
                           <!-- <li class="nav-item"><a class="nav-link active" href="#input_personal" data-toggle="tab">Personal</a></li> -->
                           <li class="nav-item"><a class="nav-link active" href="#input_personal" data-toggle="tab">Personal</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Identitas</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_identitas" data-toggle="tab">Identitas</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_pendidikan" data-toggle="tab">Pendidikan</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_keluar" data-toggle="tab">Keluarga</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_informasi_karyawan" data-toggle="tab">Informasi Karyawan</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_bpjs" data-toggle="tab">BPJS</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_skill" data-toggle="tab">SKILL</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_gaji" data-toggle="tab">Gaji</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_penga_organisasi" data-toggle="tab">Pengalaman organisasi</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_penga_kerja" data-toggle="tab">Pengalaman Kerja</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_konfirmasi" data-toggle="tab">Konfirmasi</a></li>
                           <!-- <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
                         <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li> -->
                       </ul>
                     </div><!-- /.card-header -->
                     <div class="card-body">
                       <div class="tab-content">
+                          <div class="tab-pane" id="">
+
+                            </div>
+
                         <div class="tab-pane active" id="input_personal">
-                                
 
-                            <form class="form-horizontal">
-                                <div class="form-group row">
-                                <label for="inputName" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                          <form id="quickForm" novalidate="novalidate">
+                              <div class="form-group row">
+                                <label for="number_of_employees" class="col-sm-2 col-form-label">Nomor Induk Karyawan</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputName" placeholder="Name" required>
+                                    <input type="text" class="form-control" id="number_of_employees" name="number_of_employees" placeholder="Nomer Induk Karyawan" required>
                                 </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="name" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="name" placeholder="Nama Lengkap" required>
                                 </div>
-                                
+                              </div>
+                              <div class="form-group row">
+                                <label for="place_of_birth" class="col-sm-2 col-form-label">Tempat lahir</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="place_of_birth" name="tempat_lahir" required>
+                                </div>
+                                <label for="place_of_birth" class="col-sm-2 col-form-label">Tanggal lahir</label>
+                                <div class="col-sm-4">
+                                    <input type="date" class="form-control" id="place_of_birth" name="place_of_birth" required > 
+                                </div>
+                              </div>
                                 <div class="form-group row">
-                                    <label for="inputName2" class="col-sm-2 col-form-label">Tempat lahir</label>
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="inputName2" placeholder="Name">
-                                    </div>
-
-                                    <label for="inputName2" class="col-sm-2 col-form-label">Tanggal lahir</label>
-                                    <div class="col-sm-4">
-                                        <input type="date" class="form-control" id="inputName2" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                        <label for="inputEmail" class="col-sm-2 col-form-label">Jenis Kelamin</label>
-                                        <div class="col-sm-10">
-                                            <div class="col-sm-6">
-                                                <!-- radio -->
-                                                <div class="form-group clearfix">
-                                                    <div class="icheck-primary d-inline">
-                                                        <input type="radio" id="radioPrimary1" name="r1" checked="">
-                                                        <label for="radioPrimary1"> Male
-                                                        </label>
-                                                    </div>
-                                                    <div class="icheck-primary d-inline">
-                                                        <input type="radio" id="radioPrimary2" name="r1">
-                                                        <label for="radioPrimary2"> Female
-                                                        </label>
-                                                    </div>
+                                    <label for="gender" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                    <div class="col-sm-10">
+                                        <div class="col-sm-6">
+                                            <div class="form-group clearfix">
+                                                <div class="icheck-primary d-inline">
+                                                    <input type="radio" id="male" name="gender" value="M" checked="">
+                                                    <label for="male"> Male
+                                                    </label>
+                                                </div>
+                                                <div class="icheck-primary d-inline">
+                                                    <input type="radio" id="female" name="gender" value="F">
+                                                    <label for="female"> Female
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                <div class="form-group row">
-                                <label for="inputExperience" class="col-sm-2 col-form-label">Experience</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                                </div>
                                 </div>
                                 <div class="form-group row">
-                                <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                                  <label for="inputExperience" class="col-sm-2 col-form-label">Agama</label>
+                                  <div class="col-sm-10">
+                                      <select class="form-control" name="religion" required>
+                                        <option value="MOSLEM">MOSLEM</option>
+                                        <option value="BUDHIST">BUDHIST</option>
+                                        <option value="CATHOLIC">CATHOLIC</option>
+                                        <option value="CHRISTIAN">CHRISTIAN</option>
+                                        <option value="HINDU">HINDU</option>
+                                        <option value="KEPERCAYAAN">KEPERCAYAAN</option>
+                                        <option value="NONE">NONE</option>
+                                      </select>                                      
+                                  </div>
                                 </div>
+                                <div class="form-group row">
+                                  <label for="biological_mother_name" class="col-sm-2 col-form-label">Nama Ibu Kandung</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="biological_mother_name" name="biological_mother_name" required>
+                                  </div>
                                 </div>
+                                <div class="form-group row">
+                                  <label for="national_id" class="col-sm-2 col-form-label">ID National</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="national_id" name="national_id"  required>
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label for="address_jalan" class="col-sm-2 col-form-label">Alamat Jalan</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address_jalan"   name="address_jalan" required>
+                                  </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                  <label for="address_rt" class="col-sm-2 col-form-label">RT </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address_rt"   name="address_rt" required>
+                                  </div>
+                                </div>
+
+   
+                                
+                                <div class="form-group row">
+                                  <label for="address_rt" class="col-sm-2 col-form-label">RW </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address_rw"   name="address_rw" required>
+                                  </div>
+                                </div>
+
+   
+                                
+                                <div class="form-group row">
+                                  <label for="address_village" class="col-sm-2 col-form-label">Desa </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address_rw"   name="address_rw" required>
+                                  </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                  <label for="address_district" class="col-sm-2 col-form-label">Kecamatan </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address_district"   name="address_district" required>
+                                  </div>
+                                </div>
+
+                                
+                                <div class="form-group row">
+                                  <label for="address_city" class="col-sm-2 col-form-label">Kota </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="address_city"   name="address_city" required>
+                                  </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                  <label for="phone" class="col-sm-2 col-form-label">Nomer Telephone</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="phone" name="phone" required>
+                                  </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                  <label for="email" class="col-sm-2 col-form-label">Email </label>
+                                  <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email"   name="email" required>
+                                  </div>
+                                </div>
+  
+                                
+                                <div class="form-group row">
+                                  <label for="hire_date" class="col-sm-2 col-form-label">Tanggal Masuk Kerja </label>
+                                  <div class="col-sm-10">
+                                    <input type="date" class="form-control" id="hire_date"   name="hire_date" required>
+                                  </div>
+                                </div>
+
+                                                                  
+                                <div class="form-group row">
+                                  <label for="hire_date" class="col-sm-2 col-form-label">Tipe Karyawan</label>
+                                  <div class="col-sm-10">
+                                      <select class="form-control" name="employee_type" required>
+                                        <option value="1-Permanent">1-Permanent</option>
+                                        <option value="5-Probation">5-Probation</option>
+                                      </select>
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label for="end_of_contract" class="col-sm-2 col-form-label">End of Contract </label>
+                                  <div class="col-sm-10">
+                                    <input type="date" class="form-control" id="end_of_contract"   name="end_of_contract" required>
+                                  </div>
+                                </div>    
+
+                                <div class="form-group row">
+                                  <label for="out" class="col-sm-2 col-form-label">Out </label>
+                                  <div class="col-sm-10">
+                                    <input type="date" class="form-control" id="out"   name="out" required>
+                                  </div>
+                                </div> 
+
+                                <div class="form-group row">
+                                  <label for="exit_statement" class="col-sm-2 col-form-label">Out </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="exit_statement" name="exit_statement" required>
+                                  </div>
+                                </div> 
+                                                                  
+                                <div class="form-group row">
+                                  <label for="hire_date" class="col-sm-2 col-form-label">Pendidikan</label>
+                                  <div class="col-sm-10">
+                                      <select class="form-control" name="educate" required>
+                                        <option value="SD">SD</option>
+                                        <option value="SMP">SMP</option>
+                                      </select>
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label for="major" class="col-sm-2 col-form-label">Jurusan </label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="major" name="major" required>
+                                  </div>
+                                </div> 
+
+                                <!-- <div class="form-group row">
+                                  <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
+                                  <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                                  </div>
+                                </div> -->
+
                                 <!-- <div class="form-group row">
                                     <div class="offset-sm-2 col-sm-10">
                                         <div class="checkbox">
@@ -431,61 +589,17 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <div class="form-group row">
-                                <div class="offset-sm-2 col-sm-10">
-                                    <button type="submit" class="btn btn-danger">Simpan</button>
-                                </div>
-                                </div>
-                            </form>
-                        </div>
+
+                              </div>
                         
-                        <div class="tab-pane" id="settings">
-                          <form class="form-horizontal">
-                            <div class="form-group row">
-                              <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-                              <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputName" placeholder="Name">
-                              </div>
+                        <div class="tab-pane" id="input_identitas">
+                          <div class="form-group row">
+                            <div class="offset-sm-2 col-sm-10">
+                              <button type="submit" class="btn btn-danger">Submit</button>
                             </div>
-                            <div class="form-group row">
-                              <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                              <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
-                              <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputName2" placeholder="Name">
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label for="inputExperience" class="col-sm-2 col-form-label">Experience</label>
-                              <div class="col-sm-10">
-                                <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
-                              <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <div class="offset-sm-2 col-sm-10">
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <div class="offset-sm-2 col-sm-10">
-                                <button type="submit" class="btn btn-danger">Submit</button>
-                              </div>
-                            </div>
-                          </form>
+                          </div>
+                        </form>
+
                         </div>
                         <!-- /.tab-pane -->
                       </div>
@@ -494,6 +608,9 @@
                   </div>
                   <!-- /.card -->
                 </div>
+
+
+
                 <!-- /.col -->
               </div>
               <!-- /.row -->
@@ -527,6 +644,57 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
 
+<!-- jquery-validation -->
+<script src="../../plugins/jquery-validation/jquery.validate.min.js"></script>
+<script src="../../plugins/jquery-validation/additional-methods.min.js"></script>
+
 <script src="../../dist/js/scriptdewe.js"></script>
+
+<script>
+  $(function () {
+    $.validator.setDefaults({
+      submitHandler: function () {
+        alert( "Form successful submitted!" );
+      }
+    });
+    $('#quickForm').validate({
+      rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+        password: {
+          required: true,
+          minlength: 5
+        },
+        terms: {
+          required: true
+        },
+      },
+      messages: {
+        email: {
+          required: "Please enter a email address",
+          email: "Please enter a valid email address"
+        },
+        password: {
+          required: "Please provide a password",
+          minlength: "Your password must be at least 5 characters long"
+        },
+        terms: "Please accept our terms"
+      },
+      errorElement: 'span',
+      errorPlacement: function (error, element) {
+        error.addClass('invalid-feedback');
+        element.closest('.form-group').append(error);
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass('is-invalid');
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass('is-invalid');
+      }
+    });
+  });
+  </script>
 </body>
 </html>
