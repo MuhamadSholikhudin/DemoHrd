@@ -17,6 +17,10 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css" integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.css" integrity="sha512-J5tsMaZISEmI+Ly68nBDiQyNW6vzBoUlNHGsH8T3DzHTn2h9swZqiMeGm/4WMDxAphi5LMZMNA30LvxaEPiPkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -446,9 +450,9 @@
                         
                         <div class="tab-pane" id="input_identitas">
                             <div class="form-group row">
-                                <label for="number_of_employees" class="col-sm-2 col-form-label">Nomor Induk Karyawan</label>
+                                <label for="national_id" class="col-sm-2 col-form-label">Nomer KTP</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="number_of_employees" name="number_of_employees" placeholder="Nomer Induk Karyawan" required>
+                                    <input type="text" class="form-control" id="national_id" name="national_id" placeholder="Nomer KTP" required>
                                 </div>
                               </div>               
                           
@@ -536,16 +540,40 @@
                       </div>
                       <div class="tab-pane" id="input_informasi_karyawan">
                           <div class="tab-pane" id="">
+
+
                               <div class="form-group row">
-                                <label for="hire_date" class="col-sm-2 col-form-label">Tanggal Masuk Kerja </label>
-                                <div class="col-sm-10">
+                                  <label for="number_of_employees" class="col-sm-3 col-form-label">Nomor Induk Karyawan</label>
+                                  <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="number_of_employees" name="number_of_employees" placeholder="Nomer Induk Karyawan" required>
+                                  </div>
+                                </div> 
+
+                                <div class="form-group row">
+                                    <label for="inputName" class="col-sm-3 col-form-label">Pilih Job level Promosi</label>
+                                    <div class="col-sm-9">
+                                      <div class="form-group">
+                                          <select class="form-control select2bs4" style="width: 100%;">
+                                              <option selected="selected">Staff / HRD</option>
+                                              <option>Senior Staff / HRD</option>
+                                              <option>Supervisor / HRD</option>
+                                              <option>Leader / Cutting</option>
+                                              <option>Superviser / Cutting</option>
+    
+                                            </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                              <div class="form-group row">
+                                <label for="hire_date" class="col-sm-3 col-form-label">Tanggal Masuk Kerja </label>
+                                <div class="col-sm-9">
                                   <input type="date" class="form-control" id="hire_date"   name="hire_date" required>
                                 </div>
                               </div>
                              
                               <div class="form-group row">
-                                <label for="hire_date" class="col-sm-2 col-form-label">Tipe Karyawan</label>
-                                <div class="col-sm-10">
+                                <label for="hire_date" class="col-sm-3 col-form-label">Tipe Karyawan</label>
+                                <div class="col-sm-9">
                                     <select class="form-control" name="employee_type" required>
                                       <option value="1-Permanent">1-Permanent</option>
                                       <option value="5-Probation">5-Probation</option>
@@ -554,22 +582,22 @@
                               </div>
     
                               <div class="form-group row">
-                                <label for="end_of_contract" class="col-sm-2 col-form-label">End of Contract </label>
-                                <div class="col-sm-10">
+                                <label for="end_of_contract" class="col-sm-3 col-form-label">End of Contract </label>
+                                <div class="col-sm-9">
                                   <input type="date" class="form-control" id="end_of_contract"   name="end_of_contract" required>
                                 </div>
                               </div>    
     
                               <div class="form-group row">
-                                <label for="out" class="col-sm-2 col-form-label">Date Out </label>
-                                <div class="col-sm-10">
+                                <label for="out" class="col-sm-3 col-form-label">Date Out </label>
+                                <div class="col-sm-9">
                                   <input type="date" class="form-control" id="out"   name="out" required>
                                 </div>
                               </div> 
     
                               <div class="form-group row">
-                                <label for="exit_statement" class="col-sm-2 col-form-label">Out </label>
-                                <div class="col-sm-10">
+                                <label for="exit_statement" class="col-sm-3 col-form-label">Out </label>
+                                <div class="col-sm-9">
                                   <input type="text" class="form-control" id="exit_statement" name="exit_statement" required>
                                 </div>
                               </div> 
@@ -782,6 +810,9 @@
 <!-- jquery-validation -->
 <script src="../../plugins/jquery-validation/jquery.validate.min.js"></script>
 <script src="../../plugins/jquery-validation/additional-methods.min.js"></script>
+
+<!-- Select2 -->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
 
 <script src="../../dist/js/scriptdewe.js"></script>
 
