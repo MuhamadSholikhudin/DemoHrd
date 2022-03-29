@@ -9,14 +9,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+  <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css" integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.css" integrity="sha512-J5tsMaZISEmI+Ly68nBDiQyNW6vzBoUlNHGsH8T3DzHTn2h9swZqiMeGm/4WMDxAphi5LMZMNA30LvxaEPiPkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -264,12 +272,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Karyawan</h1>
+            <h1>Promosi Karyawan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+              <li class="breadcrumb-item active">Promosi Page</li>
             </ol>
           </div>
         </div>
@@ -288,7 +296,6 @@
                       <div class="text-center">
                         <img class="profile-user-img img-fluid img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
                       </div>
-      
                       <h4 class="profile-username text-center">20220351324</h4>
                       <h4 class="profile-username text-center">Nina Mcintire</h4>
                           <p class="text-muted text-center">Operator <br>
@@ -302,6 +309,16 @@
                           </div> -->
                       <ul class="list-group list-group-unbordered mb-3">
                         <li class="list-group-item">
+                          <b>Jenis Kelamin</b> <a class="float-right">M</a>
+                        </li>
+                        <li class="list-group-item">
+                          <b>Status nikah</b> <a class="float-right">Jomblo</a>
+                        </li>
+                        <li class="list-group-item">
+                          <b>Agama</b> <a class="float-right">Islam</a>
+                        </li>
+
+                        <li class="list-group-item">
                           <b>Finger ID</b> <a class="float-right">51342</a>
                         </li>
                       </ul>
@@ -312,358 +329,98 @@
                   </div>
                   <!-- /.card -->
       
-                  <!-- About Me Box -->
-                  <div class="card card-primary">
-                    <div class="card-header">
-                      <h3 class="card-title">Identitas</h3>
-                    </div>
-                    
-                    <div class="card-body mr-0">
 
-                      <strong><i class="fas fa-address-card mr-1"></i> Kartu Tanda Penduduk</strong>
-      
-                      <!-- <p class="text-muted"> -->
-                        <!-- NIK : 9823642304 <br>
-                        TTL : Jepara, 1 januari 1990 <br>
-                        Jenis Kelamin : M <br>              
-                        Alamat : jalan, rt rw desa kecamatan kota, provinsi <br>
-                        Agama : Islam <br>
-                        Status nikah : Jomblo<br> -->
-                        <table>
-                            <tr>
-                                <td valign="top">NIK</td>
-                                <td valign="top">: 9823642304</td>
-                              </tr>
-                              <tr>
-                                <td valign="top">TTL</td>
-                                <td valign="top">: Jepara, 1 januari 1990</td>
-                              </tr>
-                              <tr>
-                                <td valign="top">Jenis Kelamin</td>
-                                <td valign="top">: Perempuan</td>
-                              </tr>
-                              <tr>
-                                <td valign="top">Alamat</td>
-                                <td valign="top">: jalan, rt rw desa kecamatan kota, provinsi</td>
-                              </tr>
-                              <tr>
-                                <td valign="top">Agama</td>
-                                <td valign="top">: Islam</td>
-                              </tr>
-                              <tr>
-                                <td valign="top">Status nikah</td>
-                                <td valign="top">: Jomblo</td>
-                              </tr>
-                              <tr>
-                                <td valign="top">Ibu Kandung</td>
-                                <td valign="top">: Asmini</td>
-                              </tr>
-                        </table>
-
-                      <!-- </p> -->
-      
-                      <hr>
-                      <strong><i class="fas fa-book mr-1"></i> Pendidikan</strong>
-                        <table>
-                          <tr>
-                            <td>Pend Terakhir</td>
-                            <td>: S-1</td>
-                          </tr>
-                          <tr>
-                            <td>Jurusan</td>
-                            <td>: Psikologi</td>
-                          </tr>
-                        </table>
-                      <hr>
-                      <strong><i class="fas fa-book mr-1"></i> Email & Phone</strong>
-                        <table>
-                          <tr>
-                            <td>Email</td>
-                            <td>: email@hmail.com</td>
-                          </tr>
-                          <tr>
-                            <td>Phone</td>
-                            <td>: 08334704532</td>
-                          </tr>
-                        </table>
-                      
-      
-<!--                       <hr>
-      
-                      <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-      
-                      <p class="text-muted">Malibu, California</p>
-      
-                      <hr>
-      
-                      <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-      
-                      <p class="text-muted">
-                        <span class="tag tag-danger">UI Design</span>
-                        <span class="tag tag-success">Coding</span>
-                        <span class="tag tag-info">Javascript</span>
-                        <span class="tag tag-warning">PHP</span>
-                        <span class="tag tag-primary">Node.js</span>
-                      </p>
-      
-                      <hr>
-      
-                      <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-      
-                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
-                     -->
-                    </div>
-                    
-                  </div>
-                  
                 </div>
                 
                 <div class="col-md-9">
                     <div class="card card-primary">
                         <div class="card-header">
-                          <h3 class="card-title">Informasi Karyawan</h3>
+                          <h3 class="card-title">Gaji dan Tunjangan</h3>
                         </div>
                         <div class="card-body">
                           <!-- Date -->
                           <form class="form-horizontal">
                             <div class="form-group row">
-                              <label for="inputName" class="col-sm-3 col-form-label">Nomer Induk Karyawan</label>
-                              <div class="col-sm-3">
-                                  <input type="email" class="form-control" id="inputName" placeholder="Name" value="20220351324" required>
+                              <label for="basic_salary" class="col-sm-3 col-form-label">Basic Salary</label>
+                              <div class="col-sm-9">
+                                <input type="number" class="form-control" id="basic_salary" name="basic_salary" required>
                               </div>
-
-                              <label for="end_of_contract" class="col-sm-3 col-form-label">End of Contract </label>
-                              <div class="col-sm-3">
-                                <input type="date" class="form-control" id="end_of_contract"   name="end_of_contract" required>
-                              </div>
-                            </div>
-                              
-                            <div class="form-group row">
-                              <label for="hire_date" class="col-sm-3 col-form-label">Tanggal Masuk Kerja </label>
-                              <div class="col-sm-3">
-                                <input type="date" class="form-control" id="hire_date"   name="hire_date" required>
-                              </div>
-
-                              <label for="out" class="col-sm-3 col-form-label">Date Out </label>
-                              <div class="col-sm-3">
-                                <input type="date" class="form-control" id="out"   name="out" required>
-                              </div>
-
-                            </div>
-                                                                         
-                            <div class="form-group row">
-                              <label for="hire_date" class="col-sm-3 col-form-label">Tipe Karyawan</label>
-                              <div class="col-sm-3">
-                                  <select class="form-control" name="employee_type" required>
-                                    <option value="1-Permanent">1-Permanent</option>
-                                    <option value="5-Probation">5-Probation</option>
-                                  </select>
-                              </div>
-
-                              <label for="exit_statement" class="col-sm-3 col-form-label">Out </label>
-                              <div class="col-sm-3">
-                                <input type="text" class="form-control" id="exit_statement" name="exit_statement" required>
-                              </div>
-                            </div>
-    
-                          </form>
-                        <!-- /.card-body -->
-                      </div>
-                    </div>
-
-                    <div class="card card-primary">
-                        <div class="card-header">
-                          <h3 class="card-title">BANK</h3>
-                        </div>
-                        <div class="card-body">
-                          <div class="form-group row">
-                            <label for="bank_name" class="col-sm-3 col-form-label">Nama Bank</label>
-                            <div class="col-sm-3">
-                              <input type="text" class="form-control" id="bank_name" name="bank_name" required>
-                            </div>
-                            <label for="bank_account_name" class="col-sm-3 col-form-label">Nama Akun Bank</label>
-                            <div class="col-sm-3">
-                              <input type="text" class="form-control" id="bank_account_name" name="bank_account_name" required>
-                            </div>
-
-                          </div>
-                          <div class="form-group row">
-                            <label for="bank_branch" class="col-sm-3 col-form-label">Cabang Bank</label>
-                            <div class="col-sm-3">
-                              <input type="text" class="form-control" id="bank_branch" name="bank_branch" required>
-                            </div>
-
-                            <label for="bank_account_number" class="col-sm-3 col-form-label">Nomer Rekening</label>
-                            <div class="col-sm-3">
-                              <input type="text" class="form-control" id="bank_account_number" name="bank_account_number" required>
-                            </div>
-                          </div>
-                                      
-
-                        </div>
-                    </div>
-
-                    
-                    <div class="card card-primary">
-                        <div class="card-header">
-                          <h3 class="card-title">BPJS</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group row">
-                                <label for="inputName2" class="col-sm-3 col-form-label">BPJS Ketenagakerjaan</label>
-                                <div class="col-sm-4">
-                                    <input type="text" class="form-control" id="inputName2" placeholder="Name">
-                                </div>
-  
-                                <label for="inputName2" class="col-sm-2 col-form-label">Tanggal gabung</label>
-                                <div class="col-sm-3">
-                                    <input type="date" class="form-control" id="inputName2" placeholder="Name">
-                                </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputName2" class="col-sm-3 col-form-label">BPJS Kesehatan</label>
-                                <div class="col-sm-4">
-                                    <input type="text" class="form-control" id="inputName2" placeholder="Name">
-                                </div>
-                                <label for="inputName2" class="col-sm-2 col-form-label">Tanggal gabung</label>
-                                <div class="col-sm-3">
-                                    <input type="date" class="form-control" id="inputName2" placeholder="Name">
-                                </div>
-                            </div>                       
-
-                        </div>
-                    </div>
-
-
-                                        
-                    <div class="card card-primary">
-                        <div class="card-header">
-                          <h3 class="card-title">Gaji dan Tunjangan</h3>
-                        </div>
-                        <div class="card-body row">
-                          <div class="col-md-6">                          
+                              <label for="positional_allowance" class="col-sm-3 col-form-label">Tunjangan Jabatan</label>
+                              <div class="col-sm-9">
+                                <input type="number" class="form-control" id="positional_allowance" name="positional_allowance" required>
+                              </div>
+                            </div>
                             <div class="form-group row">
-                                <label for="basic_salary" class="col-sm-5 col-form-label">Basic Salary</label>
-                                <div class="col-sm-7">
-                                  <input type="number" class="form-control" id="basic_salary" name="basic_salary" required>
-                                </div>
+                              <label for="transportation_allowance" class="col-sm-3 col-form-label">Tunjangan Transportasi</label>
+                              <div class="col-sm-9">
+                                <input type="number" class="form-control" id="transportation_allowance" name="transportation_allowance" required>
                               </div>
-                              <div class="form-group row">
-                                <label for="positional_allowance" class="col-sm-5 col-form-label">Tunjangan Jabatan</label>
-                                <div class="col-sm-7">
-                                  <input type="number" class="form-control" id="positional_allowance" name="positional_allowance" required>
-                                </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="attendance_allowance" class="col-sm-3 col-form-label">Tunjangan Kehadiran</label>
+                              <div class="col-sm-9">
+                                <input type="number" class="form-control" id="attendance_allowance" name="attendance_allowance" required>
                               </div>
-                              <div class="form-group row">
-                                <label for="transportation_allowance" class="col-sm-5 col-form-label">Tunjangan Transportasi</label>
-                                <div class="col-sm-7">
-                                  <input type="number" class="form-control" id="transportation_allowance" name="transportation_allowance" required>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="attendance_allowance" class="col-sm-5 col-form-label">Tunjangan Kehadiran</label>
-                                <div class="col-sm-7">
-                                  <input type="number" class="form-control" id="attendance_allowance" name="attendance_allowance" required>
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="hire_date" class="col-sm-5 col-form-label">Grade</label>
-                                <div class="col-sm-7">
+                            </div>
+                            <div class="form-group row">
+                                <label for="hire_date" class="col-sm-3 col-form-label">Grade</label>
+                                <div class="col-sm-2">
                                     <select class="form-control" name="grade_salary" required>
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                     </select>
                                 </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="grade_total" class="col-sm-5 col-form-label">Total Grade</label>
-                                <div class="col-sm-7">
+                                <label for="grade_total" class="col-sm-2 col-form-label">Total Grade</label>
+                                <div class="col-sm-3">
                                     <input type="number" class="form-control" id="grade_total" name="grade_total" required>
                                 </div>
-                                  <!-- <div class="col-sm-2">
-                                      <button type="button" class="btn btn-outline btn-primary ">
-                                          <i class="fas fa-arrows-rotate"></i>
-                                         Generate</button>
-                                    </div> -->
-      
-                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn btn-primary "><ion-icon name="load"></ion-icon></i> Generate</button>
+                                  </div>
+    
                               </div>
+    
+                              <hr>
 
-                                <hr>
-
-                              <div class="col-md-6"> 
-                                <div class="form-group row">
-                                  <label for="basic_salary" class="col-sm-5 col-form-label">Basic Salary</label>
-                                  <div class="col-sm-7">
+                              <div class="form-group row mt-3">
+                                  <label for="basic_salary" class="col-sm-3 col-form-label">Basic Salary</label>
+                                  <div class="col-sm-9">
                                     <input type="number" class="form-control" id="basic_salary" name="basic_salary" required>
                                   </div>
                                 </div>
                                 <div class="form-group row">
-                                  <label for="positional_allowance" class="col-sm-5 col-form-label">Tunjangan Jabatan</label>
-                                  <div class="col-sm-7">
+                                  <label for="positional_allowance" class="col-sm-3 col-form-label">Tunjangan Jabatan</label>
+                                  <div class="col-sm-9">
                                     <input type="number" class="form-control" id="positional_allowance" name="positional_allowance" required>
                                   </div>
                                 </div>
                                 <div class="form-group row">
-                                  <label for="transportation_allowance" class="col-sm-5 col-form-label">Tunjangan Transportasi</label>
-                                  <div class="col-sm-7">
+                                  <label for="transportation_allowance" class="col-sm-3 col-form-label">Tunjangan Transportasi</label>
+                                  <div class="col-sm-9">
                                     <input type="number" class="form-control" id="transportation_allowance" name="transportation_allowance" required>
                                   </div>
                                 </div>
                                 <div class="form-group row">
-                                  <label for="attendance_allowance" class="col-sm-5 col-form-label">Tunjangan Kehadiran</label>
-                                  <div class="col-sm-7">
+                                  <label for="attendance_allowance" class="col-sm-3 col-form-label">Tunjangan Kehadiran</label>
+                                  <div class="col-sm-9">
                                     <input type="number" class="form-control" id="attendance_allowance" name="attendance_allowance" required>
                                   </div>
                                 </div>
                                 <div class="form-group row">
-                                  <label for="attendance_allowance" class="col-sm-5 col-form-label">Gaji Akhir</label>
-                                  <div class="col-sm-7">
-                                    <input type="number" class="form-control" id="attendance_allowance" name="attendance_allowance" required>
+                                    <label for="attendance_allowance" class="col-sm-3 col-form-label">Gaji Akhir</label>
+                                    <div class="col-sm-9">
+                                      <input type="number" class="form-control" id="attendance_allowance" name="attendance_allowance" required>
+                                    </div>
                                   </div>
-                                </div>       
-                              </div>                                     
-                        </div>                      
+        
+                          </form>
+                        <!-- /.card-body -->
+                      </div>
                     </div>
 
-
-                    <div class="card card-primary">
-                        <div class="card-header">
-                          <h3 class="card-title">Pajak</h3>
-                        </div>
-                        <div class="card-body">
-                          <div class="form-group row">
-                              <label for="inputName2" class="col-sm-2 col-form-label">NPWP</label>
-                              <div class="col-sm-4">
-                                  <input type="number" class="form-control" id="npwp" name="npwp" required>
-                              </div>
-
-                              <label for="inputName2" class="col-sm-2 col-form-label">Kode PTKP</label>
-                              <div class="col-sm-3">
-                                  <select class="form-control" name="kode_ptkp" required>
-                                      <option value="TK">TK</option>
-                                      <option value="K/0">K/0</option>
-                                      <option value="K/1">K/1</option>
-                                      <option value="K/2">K/2</option>
-                                    </select>
-                              </div>
-                          </div>
-                          <div class="form-group row">                           
-                              <label for="inputName2" class="col-sm-2 col-form-label">Tanggal PTKP</label>
-                              <div class="col-sm-3">
-                                  <input type="date" class="form-control" id="inputName2" placeholder="Name">
-                              </div>
-                          </div>                       
-
-                        </div>
-                    </div>
-
-
-
-                   
-
-
-                    </div>    
+                    
                   <!-- /.card -->
                 </div>
                 <!-- /.col -->
@@ -698,7 +455,13 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- Select2 -->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
 
 <script src="../../dist/js/scriptdewe.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

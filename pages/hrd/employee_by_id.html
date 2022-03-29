@@ -12,6 +12,9 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css" integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.css" integrity="sha512-J5tsMaZISEmI+Ly68nBDiQyNW6vzBoUlNHGsH8T3DzHTn2h9swZqiMeGm/4WMDxAphi5LMZMNA30LvxaEPiPkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -370,6 +373,7 @@
                           <li class="nav-item"><a class="nav-link" href="#input_bank" data-toggle="tab">BANK</a></li>
                           <li class="nav-item"><a class="nav-link" href="#input_bpjs" data-toggle="tab">BPJS</a></li>
                           <li class="nav-item"><a class="nav-link" href="#input_gaji" data-toggle="tab">Gaji</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#input_pajak" data-toggle="tab">Pajak</a></li>
                           <li class="nav-item"><a class="nav-link" href="#input_konfirmasi" data-toggle="tab">Konfirmasi</a></li>
                           <!-- <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">Activity</a></li>
                         <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">Timeline</a></li> -->
@@ -538,14 +542,7 @@
                                   <input type="date" class="form-control" id="hire_date"   name="hire_date" required>
                                 </div>
                               </div>
-                              <div class="form-group row">
-                                <label for="hire_date" class="col-sm-2 col-form-label">Tanggal Masuk Kerja </label>
-                                <div class="col-sm-10">
-                                  <input type="date" class="form-control" id="hire_date"   name="hire_date" required>
-                                </div>
-                              </div>
-    
-                                                                
+                             
                               <div class="form-group row">
                                 <label for="hire_date" class="col-sm-2 col-form-label">Tipe Karyawan</label>
                                 <div class="col-sm-10">
@@ -564,7 +561,7 @@
                               </div>    
     
                               <div class="form-group row">
-                                <label for="out" class="col-sm-2 col-form-label">Out </label>
+                                <label for="out" class="col-sm-2 col-form-label">Date Out </label>
                                 <div class="col-sm-10">
                                   <input type="date" class="form-control" id="out"   name="out" required>
                                 </div>
@@ -670,8 +667,8 @@
                                 <input type="number" class="form-control" id="grade_total" name="grade_total" required>
                             </div>
                             <div class="col-sm-2">
-                                <button type="button" class="btn btn-primary "><i class="fa fa-loader"></i> Generate</button>
-                              </div>
+                              <button type="button" class="btn btn-primary "><i class="fas fa-arrows-rotate"></i> Generate</button>
+                            </div>
 
                           </div>
 
@@ -706,6 +703,30 @@
                                   <input type="number" class="form-control" id="attendance_allowance" name="attendance_allowance" required>
                                 </div>
                               </div>
+                      </div>
+
+                      <div class="tab-pane" id="input_pajak">
+                        <div class="form-group row">
+                            <label for="npwp" class="col-sm-2 col-form-label">NPWP</label>
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control" id="npwp" name="npwp" required>
+                            </div>
+                            <label for="kode_ptkp" class="col-sm-2 col-form-label">Kode PTKP</label>
+                            <div class="col-sm-4">
+                                <select class="form-control" name="kode_ptkp" required>
+                                  <option value="TK">TK</option>
+                                  <option value="K/0">K/0</option>
+                                  <option value="K/1">K/1</option>
+                                  <option value="K/2">K/2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="year_ptkp" class="col-sm-2 col-form-label">Tanggal PTKP</label>
+                          <div class="col-sm-3">
+                              <input type="date" class="form-control" id="year_ptkp" name="year_ptkp" required>
+                          </div>
+                        </div>
                       </div>
 
                       <div class="tab-pane" id="input_konfirmasi">
